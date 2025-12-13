@@ -113,13 +113,13 @@ body {
 .archive-card {
   background-color: #181818;
   border-radius: 10px;
-  padding: 16px;              /* NEW — add breathing room */
-  max-width: 320px;
+  padding: 16px;              
+  max-width: 320px; /*may change*/
   flex: 1 1 260px;
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 8px;                   /* NEW — space between items */
+  gap: 8px;                   
 }
 
 
@@ -183,7 +183,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;       /* spacing between image, caption, controls */
+  gap: 12px;       
   max-width: 100%;
   margin: 0 auto 24px;
 }
