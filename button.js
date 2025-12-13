@@ -1,5 +1,5 @@
 let currentIndex = 0;
-
+//old code from milestone, most of this renovated in viewer.js
 
 const img = document.getElementById("screenshot-image");
 const prev = document.getElementById("prev");

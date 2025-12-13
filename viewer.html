@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Archive</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="header-box">
+            <h1 class="header-text" id="archive-title">Your Archive</h1>
+            <p class="subheader-text" id="archive-subtitle">
+                Viewing screenshots saved on this device.
+            </p>
+        </div>
+        <div class="controls" style="margin-bottom: 12px;">
+            <a href="index.html" class="nav-button">Home</a>
+        </div>
+        <section class="viewer-box" id="viewer-section" style="display:none;">
+            <div class="image-frame">
+                <img id="screenshot-image" alt="Archive screenshot">
+                <p id="image-caption" class="image-caption"></p>
+                <div class="controls controls-inside-frame">
+                    <button id="first" class="nav-button">First</button>
+                    <button id="prev" class="nav-button">Back</button>
+                    <span id="counter" class="counter"></span>
+                    <button id="next" class="nav-button">Next</button>
+                    <button id="last" class="nav-button">Last</button>
+                    <button id="random" class="nav-button">Random</button>
+                </div>
+            </div>
+            <p id="archive-story" class="archive-story"></p>
+        </section>
+        <section class="viewer-box" id="error-section" style="display:none;">
+            <p class="subheader-text">Archive not found or deleted.</p>
+            <div class="controls">
+                <a class="nav-button" href="index.html">Back home</a>
+            </div>
+        </section>
+    </main>
+    <script src="viewer.js"></script>
+</body>
+
+</html>

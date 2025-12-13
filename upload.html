@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Archive</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="header-box">
+            <h1 class="header-text">Create Your Own Archive</h1>
+            <p class="subheader-text">
+                Locally (for now) saved image archive.
+            </p>
+        </div>
+        <section class="viewer-box">
+            <form class="archive-form" onsubmit="return false;">
+                <div class="form-row">
+                    <label for="archive-name">Archive name</label>
+                    <input type="text" id="archive-name" placeholder=".">
+                </div>
+                <div class="form-row">
+                    <label for="archive-description">Short description (max 20 words)</label>
+                    <input type="text" id="archive-description" placeholder="..">
+                </div>
+                <div class="form-row">
+                    <label for="archive-story">Archive story</label>
+                    <textarea id="archive-story" rows="4" placeholder="..."></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="file-input">Screenshots</label>
+                    <input type="file" id="file-input" multiple accept="image/*">
+                </div>
+                <div class="controls">
+                    <button id="save-archive" class="nav-button">Save Archive</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="upload.js"></script>
+</body>
+
+</html>

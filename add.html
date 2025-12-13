@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Images</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="header-box">
+      <h1 class="header-text" id="archive-title">Add Images</h1>
+      <p class="subheader-text">
+        Select screenshots to add to this archive. Has an image size limit, (try to upload under 1mb I would say)
+      </p>
+    </div>
+
+<section class="viewer-box">
+  <form class="archive-form" onsubmit="return false;">
+
+    <div class="form-row">
+      <label for="file-input">Screenshots to add</label>
+      <input type="file" id="file-input" multiple accept="image/*">
+    </div>
+
+    <div class="form-row">
+      <label for="add-caption">Caption for these images (optional)</label>
+      <input type="text" id="add-caption"
+             placeholder="caption...">
+    </div>
+
+    <div class="controls">
+      <button id="add-btn" class="nav-button">Add Images</button>
+    </div>
+
+  </form>
+</section>
+
+
+
+  </main>
+
+  <script src="add.js"></script>
+</body>
+
+</html>
